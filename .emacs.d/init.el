@@ -348,8 +348,19 @@
 
 ;(load "elscreen" "ElScreen" t)
 
-(require 'buff-menu+)
+;(require 'buff-menu+)
 (add-to-list 'load-path "~/.emacs.d/bookmark+")
 (require 'bookmark+)
 
 (set-cursor-color "Red")
+
+(require 'package)
+(add-to-list 'package-archives
+             '("marmalade" . "http://marmalade-repo.org/packages/") t)
+(package-initialize)
+
+(require 'mongo)
+(require 'multi-term)
+(autoload 'markdown-mode "markdown-mode"
+  "Major mode for editing Markdown files" t)
+(setq auto-mode-alist
