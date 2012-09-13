@@ -326,8 +326,6 @@
 ;;; My location for external packages.
 (add-to-list 'load-path "~/.emacs.d/site-lisp")
 
-;(require 'php-mode)
-
 (add-to-list 'auto-mode-alist '("\\.js\\'" . javascript-mode))
 (autoload 'javascript-mode "javascript" nil t)
 
@@ -364,3 +362,8 @@
 (autoload 'markdown-mode "markdown-mode"
   "Major mode for editing Markdown files" t)
 (setq auto-mode-alist
+
+(add-to-list 'package-archives 
+    '("marmalade" .
+      "http://marmalade-repo.org/packages/"))
+(package-initialize)
