@@ -168,158 +168,6 @@
 ;(global-set-key (kbd "S-C-<up>") 'enlarge-window)
 
 
-;;; - experimental stuff - does not seem to work very well
-
-; Outline-minor-mode key map
-;  (define-prefix-command 'cm-map nil "Outline-")
-;  ; HIDE
-;  (define-key cm-map "q" 'hide-sublevels)    ; Hide everything but the top-level headings
-;  (define-key cm-map "t" 'hide-body)         ; Hide everything but headings (all body lines)
-;  (define-key cm-map "o" 'hide-other)        ; Hide other branches
-;  (define-key cm-map "c" 'hide-entry)        ; Hide this entry's body
-;  (define-key cm-map "l" 'hide-leaves)       ; Hide body lines in this entry and sub-entries
-;  (define-key cm-map "d" 'hide-subtree)      ; Hide everything in this entry and sub-entries
-;  ; SHOW
-;  (define-key cm-map "a" 'show-all)          ; Show (expand) everything
-;  (define-key cm-map "e" 'show-entry)        ; Show this heading's body
-;  (define-key cm-map "i" 'show-children)     ; Show this heading's immediate child sub-headings
-;  (define-key cm-map "k" 'show-branches)     ; Show all sub-headings under this heading
-;  (define-key cm-map "s" 'show-subtree)      ; Show (expand) everything in this heading & below
-;  ; MOVE
-;  (define-key cm-map "u" 'outline-up-heading)                ; Up
-;  (define-key cm-map "n" 'outline-next-visible-heading)      ; Next
-;  (define-key cm-map "p" 'outline-previous-visible-heading)  ; Previous
-;  (define-key cm-map "f" 'outline-forward-same-level)        ; Forward - same level
-;  (define-key cm-map "b" 'outline-backward-same-level)       ; Backward - same level
-;  (global-set-key "\M-o" cm-map)
-
-
-;  ;; Load CEDET - begin
-;  (add-to-list 'load-path "~/build/emacs/cedet-1.0pre4/common")
-;  
-;  (load-file "cedet.el")
-;  
-;  ;; Enabling various SEMANTIC minor modes.  See semantic/INSTALL for more ideas.
-;  ;; Select one of the following:
-;  
-;  ;; * This enables the database and idle reparse engines
-;  ;;(semantic-load-enable-minimum-features)
-;  
-;  ;; * This enables some tools useful for coding, such as summary mode
-;  ;;   imenu support, and the semantic navigator
-;  (semantic-load-enable-code-helpers)
-;  
-;  ;; * This enables even more coding tools such as the nascent intellisense mode
-;  ;;   decoration mode, and stickyfunc mode (plus regular code helpers)
-;  ;; (semantic-load-enable-guady-code-helpers)
-;  
-;  ;; * This turns on which-func support (Plus all other code helpers)
-;  ;; (semantic-load-enable-excessive-code-helpers)
-;  
-;  ;; This turns on modes that aid in grammar writing and semantic tool
-;  ;; development.  It does not enable any other features such as code
-;  ;; helpers above.
-;  ;; (semantic-load-enable-semantic-debugging-helpers)
-;  
-;  ;; Load CEDET - end
-;  
-;  ;; Load ECB (Emacs Code Browser) - begin
-;  (add-to-list 'load-path "~/build/emacs/ecb-2.32")
-;  
-;  (require 'ecb-autoloads)
-;  ;; Load ECB (Emacs Code Browser) - end
-
-
-;; sort buffers in buffer list
-;; (defun sort-buffers-buffer-name ()
-;;   "Put the buffer list in alphabetical order."
-;;   (interactive)
-;;   (dolist (buff (buffer-list-sorted-buffername)) (bury-buffer buff))
-;;   (when (interactive-p) (list-buffers)))
-
-;; (defun buffer-list-sorted-buffername ()
-;;   (sort (buffer-list) 
-;;   	(function
-;;   	 (lambda (buf1 buf2) 
-;;            (string<
-;;             (downcase (buffer-name buf1))
-;;             (downcase (buffer-name buf2)))))))
-
-;; (defun sort-buffers-file-name ()
-;;   "Put the buffer list in alphabetical order."
-;;   (interactive)
-;;   (dolist (buff (buffer-list-sorted-filename)) (bury-buffer buff))
-;;   (when (interactive-p) (list-buffers)))
-
-;; (defun buffer-list-sorted-filename2 ()
-;;   (sort (buffer-list) 
-;;   	(function
-;;   	 (lambda (buf1 buf2) 
-;;            (string<
-;;             (downcase (buffer-file-name buf1))
-;;             (downcase (buffer-file-name buf2)))))))
-
-;; (defun buffer-list-sorted-filename ()
-;;   (sort (buffer-list) 
-;;   	(function
-;;   	 (lambda (buf1 buf2) 
-;;            (let ((bf1 (buffer-file-name buf1))
-;;                  (bf2 (buffer-file-name buf2)))
-;;              `(string< bf1 bf2))))))
-           
-
-;;(global-set-key "\M-b"    'sort-buffers-buffer-name)
-;;(global-set-key "\M-b"    'sort-buffers-file-name)
-
-
-
-;; function that toggles between these two:
-;; save current window configuration, display current buffer in one window
-;; restore saved window configuration 
-;; (setq window-configuration-stack nil)
-
-;; (defun stack-push (item stack)
-;;   (setq stack (cons item stack)))
-
-;; (defun stack-top (stack)
-;;   (car stack))
-
-;; (defun stack-pop (stack)
-;;   (setq stack (cdr stack)))
-
-;; (defun stack-string (stack)
-;;   (if (eq stack nil)
-;;       "nil"
-;;     (string (car stack) (stack-string (cdr stack)))))
-
-;; (defun push-window-configuration ()
-;;   (interactive)
-;;   (setq window-configuration-stack 
-;;         (cons (current-window-configuration) 
-;;               window-configuration-stack))
-;;   (message "Window configuration saved"))
-
-;; (defun pop-window-configuration ()
-;;   (interactive)
-;;   (let ((top (car window-configuration-stack))
-;;         (rest (cdr window-configuration-stack)))
-;;     (if (window-configuration-p top)
-;;         (progn 
-;;           (set-window-configuration top)
-;;           (setq window-configuration-stack rest)
-;;           (message "Window configuration restored"))
-;;       (message "No saved window configuration"))))
-      
-;; (defun print-window-configuration-stack ()
-;;   (interactive)
-;;   (message (stack-string window-configuration-stack)))
-
-
-;; ;; this maps toggle one window to ctr-x-4-o
-;; ;(define-key ctl-x-4-map "o" 'toggle-one-window)
-;; (define-key ctl-x-4-map "p" 'push-window-configuration)
-;; (define-key ctl-x-4-map "o" 'pop-window-configuration)
-;; (define-key ctl-x-4-map "r" 'print-window-configuration-stack)
 
 (put 'narrow-to-region 'disabled nil)
 
@@ -343,9 +191,6 @@
 (global-set-key (kbd "S-C-<down>") 'shrink-window)
 (global-set-key (kbd "S-C-<up>") 'enlarge-window)
 
-(add-to-list 'load-path "~/.emacs.d/bookmark+")
-(require 'bookmark+)
-
 (set-cursor-color "Red")
 
 (require 'package)
@@ -354,12 +199,9 @@
 (package-initialize)
 
 (require 'mongo)
+
 (require 'multi-term)
 (autoload 'markdown-mode "markdown-mode"
   "Major mode for editing Markdown files" t)
 (setq auto-mode-alist
 
-(add-to-list 'package-archives 
-    '("marmalade" .
-      "http://marmalade-repo.org/packages/"))
-(package-initialize)
