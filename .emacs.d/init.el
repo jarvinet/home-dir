@@ -337,16 +337,12 @@
 ;; disable exiting emacs with Ctrl-x Ctrl-c
 (global-set-key [(ctrl x)(ctrl c)] nil)
 
-; (require 'undo-tree)
 
 (global-set-key (kbd "S-C-<left>") 'shrink-window-horizontally)
 (global-set-key (kbd "S-C-<right>") 'enlarge-window-horizontally)
 (global-set-key (kbd "S-C-<down>") 'shrink-window)
 (global-set-key (kbd "S-C-<up>") 'enlarge-window)
 
-;(load "elscreen" "ElScreen" t)
-
-;(require 'buff-menu+)
 (add-to-list 'load-path "~/.emacs.d/bookmark+")
 (require 'bookmark+)
 
