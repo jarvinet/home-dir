@@ -1,0 +1,18 @@
+;; Object en/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "en/"
+  :tables (list 
+   (semanticdb-table "xml2json.js"
+    :major-mode 'js-mode
+    :tags nil
+    :file "xml2json.js"
+    :pointmax 1
+    :fsize 5362
+    :lastmodtime '(20626 2306)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!Users!tapani.jarvinen!Documents!workspace!trophy-slots!languages!en!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

@@ -1,0 +1,45 @@
+;; Object xml2json/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "xml2json/"
+  :tables (list 
+   (semanticdb-table "file.json"
+    :major-mode 'js-mode
+    :tags nil
+    :file "file.json"
+    :pointmax 40267
+    :fsize 482527
+    :lastmodtime '(20632 31908)
+    :unmatched-syntax '((BRACK_BLOCK 1 . 40266))
+    )
+   (semanticdb-table "file_pp_1.json"
+    :major-mode 'js-mode
+    :tags nil
+    :file "file_pp_1.json"
+    :pointmax 769776
+    :fsize 769775
+    :lastmodtime '(20627 23172)
+    :unmatched-syntax '((BRACK_BLOCK 1 . 769775))
+    )
+   (semanticdb-table "sk_languages.json"
+    :major-mode 'js-mode
+    :tags nil
+    :file "sk_languages.json"
+    :pointmax 40327
+    :fsize 40266
+    :lastmodtime '(20632 30686)
+    :unmatched-syntax '((BRACK_BLOCK 1 . 40326) (BRACK_BLOCK 1 . 40326))
+    )
+   (semanticdb-table "ts_languages.json"
+    :major-mode 'js-mode
+    :tags nil
+    :file "ts_languages.json"
+    :pointmax 482528
+    :fsize 482527
+    :lastmodtime '(20632 31908)
+    :unmatched-syntax '((BRACK_BLOCK 1 . 482527))
+    )
+    )
+  :file "!Users!tapani.jarvinen!Documents!workspace!xml2json!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

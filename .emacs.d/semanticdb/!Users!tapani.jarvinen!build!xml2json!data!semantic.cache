@@ -1,0 +1,81 @@
+;; Object data/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "data/"
+  :tables (list 
+   (semanticdb-table "language.json"
+    :major-mode 'js-mode
+    :tags nil
+    :file "language.json"
+    :pointmax 350947
+    :fsize 350946
+    :lastmodtime '(20626 64507)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "language_s.json"
+    :major-mode 'js-mode
+    :tags nil
+    :file "language_s.json"
+    :pointmax 350945
+    :fsize 350944
+    :lastmodtime '(20626 63741)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "language_pp.json"
+    :major-mode 'js-mode
+    :tags nil
+    :file "language_pp.json"
+    :pointmax 733196
+    :fsize 733195
+    :lastmodtime '(20627 3688)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "language_pp_3.json"
+    :major-mode 'js-mode
+    :tags nil
+    :file "language_pp_3.json"
+    :pointmax 728381
+    :fsize 1002998
+    :lastmodtime '(20627 4515)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "language_pp_4.json"
+    :major-mode 'js-mode
+    :tags nil
+    :file "language_pp_4.json"
+    :pointmax 1002999
+    :fsize 1038455
+    :lastmodtime '(20627 4830)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "language_pp_5.json"
+    :major-mode 'js-mode
+    :tags nil
+    :file "language_pp_5.json"
+    :pointmax 1038456
+    :fsize 1038205
+    :lastmodtime '(20627 4892)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "language_pp_6.json"
+    :major-mode 'js-mode
+    :tags nil
+    :file "language_pp_6.json"
+    :pointmax 1032084
+    :fsize 1032083
+    :lastmodtime '(20627 6154)
+    :unmatched-syntax '((BRACK_BLOCK 1 . 1032083))
+    )
+   (semanticdb-table "language_pp_7.json"
+    :major-mode 'js-mode
+    :tags nil
+    :file "language_pp_7.json"
+    :pointmax 774503
+    :fsize 774502
+    :lastmodtime '(20627 6156)
+    :unmatched-syntax '((BRACK_BLOCK 1 . 774502))
+    )
+   )
+  :file "!Users!tapani.jarvinen!build!xml2json!data!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

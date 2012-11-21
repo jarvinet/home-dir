@@ -81,14 +81,21 @@
 
 ;; this shows the buffer *Buffer List* in the same window
 ;; instead of creating a new window
- (custom-set-variables
-  ;; custom-set-variables was added by Custom -- don't edit or cut/paste it!
-  ;; Your init file should contain only one such instance.
-  '(same-window-buffer-names (quote ("*shell*" "*mail*" "*info*" "*inferior-lisp*" "*ielm*" "*scheme*" "*Buffer List*"))))
- (custom-set-faces
-  ;; custom-set-faces was added by Custom -- don't edit or cut/paste it!
-  ;; Your init file should contain only one such instance.
-  )
+ 
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(ede-project-directories (quote ("/Users/tapani.jarvinen/Documents/workspace/slots-web")))
+ '(same-window-buffer-names (quote ("*shell*" "*mail*" "*info*" "*inferior-lisp*" "*ielm*" "*scheme*" "*Buffer List*"))))
+ 
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
 
 ;; do not use tabs for indenting
 ;; indent-tabs-mode is a per buffer variable, this sets its default value
@@ -194,14 +201,10 @@
 (set-cursor-color "Red")
 
 (require 'package)
-(add-to-list 'package-archives
-             '("marmalade" . "http://marmalade-repo.org/packages/") t)
+(add-to-list 'package-archives 
+    '("marmalade" .
+      "http://marmalade-repo.org/packages/"))
 (package-initialize)
 
 (require 'mongo)
-
-(require 'multi-term)
-(autoload 'markdown-mode "markdown-mode"
-  "Major mode for editing Markdown files" t)
-(setq auto-mode-alist
 

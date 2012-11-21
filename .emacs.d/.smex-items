@@ -1,16 +1,51 @@
 
 ;; ----- smex-history -----
 (
- package-list-packages
- cd
- 5x5
- arp
- dbx
- dig
- erc
+ revert-buffer
+ downcase-word
+ upcase-word
+ how-many
+ regexp-builder
+ search-forward-regexp
+ count-matches
 )
 
 ;; ----- smex-data -----
 (
- (package-list-packages . 1)
+ (package-list-packages . 8)
+ (apropos-zippy . 1)
+ (insert-zippyism . 1)
+ (revert-buffer . 218)
+ (calc . 7)
+ (set-justification . 1)
+ (eval-expression . 1)
+ (life . 1)
+ (eval-region . 7)
+ (package-menu-mode . 1)
+ (magit-status . 1)
+ (shell . 10)
+ (clojure-jack-in . 1)
+ (find-grep . 6)
+ (global-ede-mode . 1)
+ (ede . 2)
+ (ede-new . 1)
+ (grep . 6)
+ (count-matches . 10)
+ (checkdoc-ispell-comments . 1)
+ (comment-region . 12)
+ (auto-fill-mode . 1)
+ (calendar . 2)
+ (sort-fields . 2)
+ (indent-region . 2)
+ (sort-lines . 1)
+ (sort-numeric-fields . 4)
+ (quickurl . 1)
+ (url-view-url . 1)
+ (downcase-word . 3)
+ (upcase-word . 4)
+ (ediff-buffers . 1)
+ (move-to-column . 3)
+ (search-forward-regexp . 1)
+ (regexp-builder . 2)
+ (how-many . 27)
 )

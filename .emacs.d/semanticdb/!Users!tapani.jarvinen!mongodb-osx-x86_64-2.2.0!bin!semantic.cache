@@ -1,0 +1,96 @@
+;; Object bin/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "bin/"
+  :tables (list 
+   (semanticdb-table "updateAchievement.js"
+    :major-mode 'js-mode
+    :tags nil
+    :file "updateAchievement.js"
+    :pointmax 182
+    :fsize 181
+    :lastmodtime '(20599 23832)
+    :unmatched-syntax '((PAREN_BLOCK 140 . 181) (PAREN_BLOCK 80 . 117) (PAREN_BLOCK 22 . 58) (PAREN_BLOCK 140 . 181) (PAREN_BLOCK 80 . 117) (PAREN_BLOCK 22 . 58) (PAREN_BLOCK 80 . 117) (PAREN_BLOCK 22 . 58))
+    )
+   (semanticdb-table "checkGameBadges.js"
+    :major-mode 'js-mode
+    :tags 
+        '( ("getGameIds" function nil nil [208 402])
+            ("getGameBadges" function (:arguments 
+              ( ("gameIds" variable nil (reparse-symbol FormalParameterList) [427 434]))              ) nil [404 906])
+            ("printResult" function (:arguments 
+              ( ("badgesPerGame" variable nil (reparse-symbol FormalParameterList) [929 942]))              ) nil [908 1216]))          
+    :file "checkGameBadges.js"
+    :pointmax 1397
+    :fsize 1396
+    :lastmodtime '(20596 61544)
+    :unmatched-syntax '((VARIABLE 1306 . 1317) (PAREN_BLOCK 1317 . 1332) (VAR 1262 . 1265) (PAREN_BLOCK 1295 . 1304) (VARIABLE 1246 . 1251) (PAREN_BLOCK 1251 . 1260) (VAR 1218 . 1221) (PAREN_BLOCK 1242 . 1244))
+    )
+   (semanticdb-table "checkMasterTrophy.js"
+    :major-mode 'js-mode
+    :tags 
+        '( ("getPlayerIdByName" function (:arguments 
+              ( ("name" variable nil (reparse-symbol FormalParameterList) [108 112]))              ) nil [81 193])
+            ("getGameIdByName" function (:arguments 
+              ( ("name" variable nil (reparse-symbol FormalParameterList) [220 224]))              ) nil [195 299])
+            ("getBadgesCompleteAchievementByGameId" function (:arguments 
+              ( ("gameId" variable nil (reparse-symbol FormalParameterList) [347 353]))              ) nil [301 518])
+            ("findPlayerProgress" function (:arguments 
+              ( ("achievement" variable nil (reparse-symbol FormalParameterList) [656 667]))              ) nil [628 805])
+            ("printProperties" function (:arguments 
+              ( ("object" variable nil (reparse-symbol FormalParameterList) [832 838]))              ) nil [807 932]))          
+    :file "checkMasterTrophy.js"
+    :pointmax 1615
+    :fsize 1614
+    :lastmodtime '(20596 63962)
+    :unmatched-syntax '((ELSE 1566 . 1570) (IF 1427 . 1429) (PAREN_BLOCK 1430 . 1456) (VAR 1377 . 1380) (PAREN_BLOCK 1423 . 1425) (VAR 1309 . 1312) (PAREN_BLOCK 1348 . 1375) (VAR 1191 . 1194) (PAREN_BLOCK 1237 . 1307) (PAREN_BLOCK 1186 . 1188) (DOT 1180 . 1181) (VAR 1116 . 1119) (PAREN_BLOCK 1157 . 1180) (VARIABLE 1072 . 1087) (PAREN_BLOCK 1087 . 1114) (VAR 994 . 997) (PAREN_BLOCK 1062 . 1070) (VAR 934 . 937) (PAREN_BLOCK 962 . 975))
+    )
+   (semanticdb-table "achievement.json"
+    :major-mode 'js-mode
+    :tags nil
+    :file "achievement.json"
+    :pointmax 46360
+    :fsize 46359
+    :lastmodtime '(20606 565)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "language2.json"
+    :major-mode 'js-mode
+    :tags nil
+    :file "language2.json"
+    :pointmax 92690
+    :fsize 92689
+    :lastmodtime '(20616 54244)
+    :unmatched-syntax '((BRACK_BLOCK 1 . 92689) (BRACK_BLOCK 1 . 92747))
+    )
+   (semanticdb-table "language3.json"
+    :major-mode 'js-mode
+    :tags nil
+    :file "language3.json"
+    :pointmax 90065
+    :fsize 90064
+    :lastmodtime '(20612 53157)
+    :unmatched-syntax '((BRACK_BLOCK 1 . 90064) (BRACK_BLOCK 1 . 90038) (BRACK_BLOCK 1 . 90040) (BRACK_BLOCK 1 . 90038))
+    )
+   (semanticdb-table "language4.json"
+    :major-mode 'js-mode
+    :tags nil
+    :file "language4.json"
+    :pointmax 107904
+    :fsize 107903
+    :lastmodtime '(20616 26947)
+    :unmatched-syntax '((BRACK_BLOCK 1 . 107903) (BRACK_BLOCK 1 . 108055))
+    )
+   (semanticdb-table "convert.js"
+    :major-mode 'js-mode
+    :tags nil
+    :file "convert.js"
+    :pointmax 5225
+    :fsize 5224
+    :lastmodtime '(20616 26831)
+    :unmatched-syntax '((PAREN_BLOCK 5157 . 5224) (PAREN_BLOCK 5068 . 5135) (PAREN_BLOCK 4979 . 5046) (PAREN_BLOCK 4894 . 4957) (PAREN_BLOCK 4803 . 4872) (PAREN_BLOCK 4717 . 4781) (PAREN_BLOCK 4632 . 4695) (PAREN_BLOCK 4539 . 4610) (PAREN_BLOCK 4455 . 4517) (PAREN_BLOCK 4371 . 4433) (PAREN_BLOCK 4287 . 4349) (PAREN_BLOCK 4207 . 4265) (PAREN_BLOCK 4121 . 4185) (PAREN_BLOCK 4040 . 4099) (PAREN_BLOCK 3960 . 4018) (PAREN_BLOCK 3872 . 3938) (PAREN_BLOCK 3793 . 3850) (PAREN_BLOCK 3717 . 3771) (PAREN_BLOCK 3641 . 3695) (PAREN_BLOCK 3568 . 3619) (PAREN_BLOCK 3492 . 3546) (PAREN_BLOCK 3424 . 3470) (PAREN_BLOCK 3342 . 3402) (PAREN_BLOCK 3262 . 3320) (PAREN_BLOCK 3182 . 3240) (PAREN_BLOCK 3104 . 3160) (PAREN_BLOCK 3025 . 3082) (PAREN_BLOCK 2939 . 3003) (PAREN_BLOCK 2857 . 2917) (PAREN_BLOCK 2777 . 2835) (PAREN_BLOCK 2698 . 2755) (PAREN_BLOCK 2614 . 2676) (PAREN_BLOCK 2537 . 2592) (PAREN_BLOCK 2453 . 2515) (PAREN_BLOCK 2373 . 2431) (PAREN_BLOCK 2295 . 2351) (PAREN_BLOCK 2217 . 2273) (PAREN_BLOCK 2132 . 2195) (PAREN_BLOCK 2051 . 2110) (PAREN_BLOCK 1972 . 2029) (PAREN_BLOCK 1885 . 1950) (PAREN_BLOCK 1791 . 1863) (PAREN_BLOCK 1701 . 1769) (PAREN_BLOCK 1613 . 1679) (PAREN_BLOCK 1526 . 1591) (PAREN_BLOCK 1432 . 1504) (PAREN_BLOCK 1342 . 1410) (PAREN_BLOCK 1254 . 1320) (PAREN_BLOCK 1173 . 1232) (PAREN_BLOCK 1085 . 1151) (PAREN_BLOCK 1001 . 1063) (PAREN_BLOCK 919 . 979) (PAREN_BLOCK 839 . 897) (PAREN_BLOCK 752 . 817) (PAREN_BLOCK 669 . 730) (PAREN_BLOCK 588 . 647) (PAREN_BLOCK 509 . 566) (PAREN_BLOCK 423 . 487) (PAREN_BLOCK 341 . 401) (PAREN_BLOCK 261 . 319) (PAREN_BLOCK 178 . 237) (VARIABLE 4 . 9) (VARIABLE 10 . 14) (VARIABLE 15 . 18) (VARIABLE 19 . 24) (WITH 25 . 29) (VARIABLE 30 . 33) (VARIABLE 34 . 37) (VARIABLE 38 . 42) (VARIABLE 43 . 45) (VARIABLE 46 . 58) (VARIABLE 59 . 63) (VARIABLE 64 . 70) (VARIABLE 71 . 75) (VARIABLE 76 . 78) (VARIABLE 79 . 90) (VARIABLE 92 . 94) (PAREN_BLOCK 111 . 158))
+    )
+   )
+  :file "!Users!tapani.jarvinen!mongodb-osx-x86_64-2.2.0!bin!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

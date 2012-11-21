@@ -1,0 +1,36 @@
+;; Object xml2json/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "xml2json/"
+  :tables (list 
+   (semanticdb-table "testing.js"
+    :major-mode 'js-mode
+    :tags nil
+    :file "testing.js"
+    :pointmax 3159
+    :fsize 3274
+    :lastmodtime '(18541 45372)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "jquery.xml2json.js"
+    :major-mode 'js-mode
+    :tags nil
+    :file "jquery.xml2json.js"
+    :pointmax 7384
+    :fsize 7570
+    :lastmodtime '(20072 11256)
+    :unmatched-syntax '((PAREN_BLOCK 7374 . 7382) (PAREN_BLOCK 734 . 7374) (IF 716 . 718) (PAREN_BLOCK 718 . 733))
+    )
+   (semanticdb-table "test.html"
+    :major-mode 'js-mode
+    :tags nil
+    :file "test.html"
+    :pointmax 837
+    :fsize 836
+    :lastmodtime '(20626 64962)
+    :unmatched-syntax '(($EOI 837 . 837) (DIV 830 . 831) (LESS_THAN 829 . 830) (DIV 821 . 822) (LESS_THAN 820 . 821) (DIV 814 . 815) (VARIABLE 801 . 803) (LESS_THAN 813 . 814) (LESS_THAN 796 . 797) (LESS_THAN 789 . 790) (DIV 781 . 782) (LESS_THAN 780 . 781) (DIV 770 . 771) (LESS_THAN 769 . 770) (PAREN_BLOCK 596 . 766) (DOT 590 . 591) (VARIABLE 554 . 558) (PAREN_BLOCK 580 . 590) (LESS_THAN 546 . 547) (DIV 536 . 537) (VARIABLE 487 . 491) (VARIABLE 510 . 513) (LESS_THAN 535 . 536) (LESS_THAN 479 . 480) (DIV 466 . 467) (VARIABLE 426 . 430) (VARIABLE 449 . 452) (LESS_THAN 465 . 466) (LESS_THAN 418 . 419) (GREATER_THAN 411 . 412) (DIV 400 . 401) (VARIABLE 314 . 318) (VARIABLE 337 . 340) (LESS_THAN 399 . 400) (LESS_THAN 306 . 307) (DIV 293 . 294) (VARIABLE 217 . 221) (VARIABLE 240 . 243) (LESS_THAN 292 . 293) (LESS_THAN 209 . 210) (punctuation 201 . 204) (LESS_THAN 200 . 201) (DIV 191 . 192) (LESS_THAN 180 . 181) (VARIABLE 129 . 134) (LESS_THAN 168 . 169) (VARIABLE 11 . 15) (VARIABLE 16 . 22) (STRING 23 . 63) (STRING 64 . 121) (LESS_THAN 123 . 124) (punctuation 2 . 3) (LESS_THAN 1 . 2))
+    )
+   )
+  :file "!Users!tapani.jarvinen!build!xml2json!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

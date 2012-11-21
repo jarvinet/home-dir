@@ -1,0 +1,36 @@
+;; Object en/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "en/"
+  :tables (list 
+   (semanticdb-table "language.json"
+    :major-mode 'js-mode
+    :tags nil
+    :file "language.json"
+    :pointmax 57127
+    :fsize 57126
+    :lastmodtime '(20606 42)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "language2.json"
+    :major-mode 'js-mode
+    :tags nil
+    :file "language2.json"
+    :pointmax 92748
+    :fsize 92747
+    :lastmodtime '(20612 47460)
+    :unmatched-syntax '((BRACK_BLOCK 1 . 92747))
+    )
+   (semanticdb-table "language3.json"
+    :major-mode 'js-mode
+    :tags nil
+    :file "language3.json"
+    :pointmax 90039
+    :fsize 90038
+    :lastmodtime '(20612 51551)
+    :unmatched-syntax '((BRACK_BLOCK 1 . 90038) (BRACK_BLOCK 1 . 92786) (BRACK_BLOCK 1 . 92786))
+    )
+   )
+  :file "!Users!tapani.jarvinen!Documents!workspace!SlotsKingdom!languages!en!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

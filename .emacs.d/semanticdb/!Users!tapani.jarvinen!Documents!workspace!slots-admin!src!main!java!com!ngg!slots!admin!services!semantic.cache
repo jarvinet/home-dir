@@ -1,0 +1,116 @@
+;; Object services/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "services/"
+  :tables (list 
+   (semanticdb-table "SyncService.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("com.ngg.slots.admin.services" package nil nil [1 38])
+            ("com.ngg.slots.utils.UnixCommandRunner" include nil nil [40 85])
+            ("org.springframework.beans.factory.annotation.Autowired" include nil nil [86 148])
+            ("org.springframework.data.mongodb.core.MongoTemplate" include nil nil [149 208])
+            ("org.springframework.security.core.context.SecurityContextHolder" include nil nil [209 280])
+            ("org.springframework.security.core.userdetails.UserDetails" include nil nil [281 346])
+            ("org.springframework.stereotype.Service" include nil nil [347 393])
+            ("java.io.File" include nil nil [395 415])
+            ("java.util.ArrayList" include nil nil [416 443])
+            ("java.util.Date" include nil nil [444 466])
+            ("java.util.List" include nil nil [467 489])
+            ("java.util.concurrent.ExecutorService" include nil nil [490 534])
+            ("java.util.concurrent.Executors" include nil nil [535 573])
+            ("java.util.concurrent.Future" include nil nil [574 609])
+            ("SyncService" type
+               (:typemodifiers ("public")
+                :superclasses "SyncBase"
+                :members 
+                  ( ("unixCommandRunner" variable
+                       (:typemodifiers ("private")
+                        :type "UnixCommandRunner")
+                        (reparse-symbol class_member_declaration) [832 902])
+                    ("executors" variable
+                       (:typemodifiers ("private")
+                        :type "ExecutorService")
+                        (reparse-symbol class_member_declaration) [907 975])
+                    ("gitCmdPrefix" variable
+                       (:typemodifiers ("private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [980 1094])
+                    ("syncStatus" variable
+                       (:typemodifiers ("private")
+                        :type "SyncStatus")
+                        (reparse-symbol class_member_declaration) [1114 1144])
+                    ("mongoTemplate" variable
+                       (:typemodifiers ("private")
+                        :type "MongoTemplate")
+                        (reparse-symbol class_member_declaration) [1165 1201])
+                    ("SyncService" function
+                       (:constructor-flag t
+                        :typemodifiers ("public"))
+                        (reparse-symbol class_member_declaration) [1209 1366])
+                    ("checkGitRepo" function
+                       (:throws ("Exception")
+                        :typemodifiers ("private")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1372 1713])
+                    ("initGitRepo" function
+                       (:throws ("Exception")
+                        :typemodifiers ("private")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1720 2646])
+                    ("gitCommit" function
+                       (:throws ("Exception")
+                        :typemodifiers ("private")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [2652 2919])
+                    ("getLoggedUser" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [2925 3216])
+                    ("saveCollections" function
+                       (:throws ("Exception")
+                        :typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [3222 3632])
+                    ("getModifiedCollections" function
+                       (:constructor-flag t
+                        :throws ("Exception"))
+                        (reparse-symbol class_member_declaration) [3658 4044])
+                    ("addCoinsToPlayerBalance" function
+                       (:throws ("Exception")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("coins" variable (:type "Long") (reparse-symbol formal_parameters) [4086 4096]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [4050 4261])
+                    ("fetchReportingCollections" function
+                       (:throws ("Exception")
+                        :typemodifiers ("public")
+                        :type "SyncStatus")
+                        (reparse-symbol class_member_declaration) [4268 4712])
+                    ("checkSyncStatus" function
+                       (:typemodifiers ("public")
+                        :type "SyncStatus")
+                        (reparse-symbol class_member_declaration) [4718 4788])
+                    ("publishConfigCollections" function
+                       (:throws ("Exception")
+                        :typemodifiers ("public")
+                        :type "SyncStatus")
+                        (reparse-symbol class_member_declaration) [4794 5579])
+                    ("addReportingIndices" function
+                       (:throws ("Exception")
+                        :typemodifiers ("private")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [5585 6160]))                  
+                :type "class")
+                nil [784 6163]))          
+    :file "SyncService.java"
+    :pointmax 6164
+    :fsize 6163
+    :lastmodtime '(20579 62322)
+    :unmatched-syntax '((GT 3656 . 3657) (PUBLIC 3638 . 3644) (LT 3649 . 3650) (IDENTIFIER 775 . 783))
+    )
+   )
+  :file "!Users!tapani.jarvinen!Documents!workspace!slots-admin!src!main!java!com!ngg!slots!admin!services!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

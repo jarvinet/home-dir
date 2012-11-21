@@ -1,0 +1,18 @@
+;; Object BulkLevel/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "BulkLevel/"
+  :tables (list 
+   (semanticdb-table "envsett.json"
+    :major-mode 'js-mode
+    :tags nil
+    :file "envsett.json"
+    :pointmax 1170
+    :fsize 1169
+    :lastmodtime '(20633 40981)
+    :unmatched-syntax '((BRACK_BLOCK 1 . 1169) (BRACK_BLOCK 1 . 1171))
+    )
+   )
+  :file "!Users!tapani.jarvinen!Jira!BulkLevel!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

@@ -1,0 +1,48 @@
+;; Object repository/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "repository/"
+  :tables (list 
+   (semanticdb-table "TranslationRepositoryTest.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("com.ngg.slots.core.repository" package nil nil [1 39])
+            ("java.util.List" include nil nil [140 162])
+            ("org.junit.Before" include nil nil [164 188])
+            ("org.junit.Test" include nil nil [189 211])
+            ("org.springframework.beans.factory.annotation.Autowired" include nil nil [212 274])
+            ("org.springframework.data.domain.Page" include nil nil [275 319])
+            ("org.springframework.data.domain.PageRequest" include nil nil [320 371])
+            ("org.springframework.data.domain.Pageable" include nil nil [372 420])
+            ("com.ngg.slots.core.BaseTest" include nil nil [422 457])
+            ("com.ngg.slots.core.TestUtils" include nil nil [458 494])
+            ("com.ngg.slots.core.domain.Role" include nil nil [495 533])
+            ("com.ngg.slots.core.domain.Translation" include nil nil [534 579])
+            ("TranslationRepositoryTest" type
+               (:typemodifiers ("public")
+                :superclasses "BaseTest"
+                :members 
+                  ( ("translationRepository" variable
+                       (:typemodifiers ("private")
+                        :type "TranslationRepository")
+                        (reparse-symbol class_member_declaration) [653 705])
+                    ("setup" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [718 742])
+                    ("testFindOneByName" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [753 993]))                  
+                :type "class")
+                nil [581 995]))          
+    :file "TranslationRepositoryTest.java"
+    :pointmax 996
+    :fsize 1049
+    :lastmodtime '(20632 39751)
+    :unmatched-syntax '((IDENTIFIER 130 . 137) (DOT 129 . 130) (IDENTIFIER 121 . 129) (DOT 120 . 121) (IDENTIFIER 112 . 120) (DOT 111 . 112) (IMPORT 94 . 100) (STATIC 101 . 107) (IDENTIFIER 108 . 111) (IDENTIFIER 82 . 92) (DOT 81 . 82) (IDENTIFIER 68 . 81) (DOT 67 . 68) (IDENTIFIER 59 . 67) (DOT 58 . 59) (IMPORT 41 . 47) (STATIC 48 . 54) (IDENTIFIER 55 . 58))
+    )
+   )
+  :file "!Users!tapani.jarvinen!Documents!workspace!slots-core!src!test!java!com!ngg!slots!core!repository!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

@@ -1,0 +1,515 @@
+;; Object interfacelayer/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "interfacelayer/"
+  :tables (list 
+   (semanticdb-table "CNggSlotServer.java"
+    :major-mode 'java-mode
+    :tags 
+        '( ("com.nextgengaming.facebook.stateless.interfacelayer" package nil nil [1 61])
+            ("java.util.Enumeration" include nil nil [63 92])
+            ("java.util.Hashtable" include nil nil [93 120])
+            ("java.util.LinkedList" include nil nil [121 149])
+            ("java.util.List" include nil nil [150 172])
+            ("org.apache.log4j.Logger" include nil nil [174 205])
+            ("com.ngg.gdm2.facebook.stateless.system.achievements.CAchievementCollection" include nil nil [207 289])
+            ("com.ngg.gdm2.facebook.stateless.system.achievements.CPlayerAchievementProgress" include nil nil [290 376])
+            ("com.ngg.gdm2.facebook.stateless.system.utils.CDataUtils" include nil nil [377 440])
+            ("com.ngg.gdm2.facebook.stateless.system.utils.CTransactionManager" include nil nil [441 513])
+            ("com.ngg.gdm2.server.interfaces.*" include nil nil [514 554])
+            ("com.ngg.gdm2.server.config.CSlotConfigBean" include nil nil [555 605])
+            ("com.ngg.gdm2.server.data.*" include nil nil [606 640])
+            ("com.ngg.gdm2.server.error.*" include nil nil [641 676])
+            ("com.ngg.live.utils.database.CSQLManager" include nil nil [677 724])
+            ("com.nextgengaming.facebook.stateless.api.*" include nil nil [726 776])
+            ("com.nextgengaming.facebook.stateless.exceptions.ConfigurationException" include nil nil [777 855])
+            ("com.ngg.gdm2.facebook.stateless.system.interfaces.IGameSystemWrapper" include nil nil [857 933])
+            ("com.ngg.gdm2.facebook.stateless.newrelic.Trace" include nil nil [934 988])
+            ("CNggSlotServer" type
+               (:typemodifiers ("public")
+                :interfaces ("IGame" "INggSlotController")
+                :members 
+                  ( ("m_Logger" variable
+                       (:typemodifiers ("private" "static")
+                        :type "Logger")
+                        (reparse-symbol class_member_declaration) [1059 1131])
+                    ("m_cAchievementCollection" variable (:type "CAchievementCollection") (reparse-symbol class_member_declaration) [1136 1186])
+                    ("m_iSlotServer" variable
+                       (:typemodifiers ("protected")
+                        :type "INggSlotServer")
+                        (reparse-symbol class_member_declaration) [1218 1258])
+                    ("m_iGameLogs" variable
+                       (:typemodifiers ("protected")
+                        :type "INggGameLogs")
+                        (reparse-symbol class_member_declaration) [1261 1298])
+                    ("m_cServerData" variable
+                       (:typemodifiers ("protected")
+                        :type "CServerData")
+                        (reparse-symbol class_member_declaration) [1301 1339])
+                    ("m_iPluginWrapper" variable
+                       (:typemodifiers ("protected")
+                        :type "IGameWrapper")
+                        (reparse-symbol class_member_declaration) [1370 1412])
+                    ("m_cRng" variable
+                       (:typemodifiers ("protected")
+                        :type "CNggRng")
+                        (reparse-symbol class_member_declaration) [1415 1443])
+                    ("m_cAccount" variable
+                       (:typemodifiers ("protected")
+                        :type "CNggAccount")
+                        (reparse-symbol class_member_declaration) [1446 1481])
+                    ("m_iStateManager" variable
+                       (:typemodifiers ("protected")
+                        :type "IStateManager")
+                        (reparse-symbol class_member_declaration) [1484 1525])
+                    ("m_iConfig" variable
+                       (:typemodifiers ("protected")
+                        :type "IConfiguration")
+                        (reparse-symbol class_member_declaration) [1528 1564])
+                    ("m_iHistoryLogger" variable
+                       (:typemodifiers ("protected")
+                        :type "ILog")
+                        (reparse-symbol class_member_declaration) [1567 1602])
+                    ("m_sState" variable
+                       (:typemodifiers ("protected")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [1630 1659])
+                    ("m_sRecoveredGameString" variable
+                       (:typemodifiers ("protected")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [1662 1705])
+                    ("m_bGameOver" variable
+                       (:typemodifiers ("protected")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [1722 1755])
+                    ("m_bNewGame" variable
+                       (:typemodifiers ("protected")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [1758 1790])
+                    ("m_bGameInProgress" variable
+                       (:typemodifiers ("protected")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [1793 1832])
+                    ("m_bInitialised" variable
+                       (:typemodifiers ("protected")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [1835 1871])
+                    ("m_bResetGambleAvailable" variable
+                       (:typemodifiers ("protected")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [1874 1919])
+                    ("m_bRecovery" variable
+                       (:typemodifiers ("protected")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [1922 1955])
+                    ("m_sClientMessage" variable
+                       (:typemodifiers ("protected")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [1983 2020])
+                    ("m_sMessageType" variable
+                       (:typemodifiers ("protected")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [2023 2063])
+                    ("CNggSlotServer" function
+                       (:constructor-flag t
+                        :typemodifiers ("public"))
+                        (reparse-symbol class_member_declaration) [2230 2554])
+                    ("SetSlotServer" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("iSlotServer" variable (:type "INggSlotServer") (reparse-symbol formal_parameters) [2674 2700]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [2648 2748])
+                    ("SetCurrency" function
+                       (:throws ("ConfigurationException")
+                        :typemodifiers ("protected")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [2846 3197])
+                    ("SetLimits" function
+                       (:throws ("ConfigurationException")
+                        :typemodifiers ("protected")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [3291 3750])
+                    ("SetDenominations" function
+                       (:throws ("ConfigurationException")
+                        :typemodifiers ("protected")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [3846 4433])
+                    ("InitialiseForPlayer" function
+                       (:throws ("ConfigurationException" "CNggException")
+                        :typemodifiers ("protected")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [4529 5154])
+                    ("ProcessMessageType" function
+                       (:throws ("Exception")
+                        :typemodifiers ("protected")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [5341 6685])
+                    ("ProcessState" function
+                       (:throws ("Exception")
+                        :typemodifiers ("protected")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [6867 8063])
+                    ("processMessage" function
+                       (:typemodifiers ("public" "synchronized")
+                        :arguments 
+                          ( ("clientMessage" variable (:type "String") (reparse-symbol formal_parameters) [8206 8226])
+                            ("iWrapper" variable (:type "IGameWrapper") (reparse-symbol formal_parameters) [8228 8249])
+                            ("oGameWrapper" variable (:type "Object") (reparse-symbol formal_parameters) [8251 8270]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [8164 10494])
+                    ("doFacebookProcessing" function
+                       (:throws ("Exception")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("sReturnMessage" variable (:type "String") (reparse-symbol formal_parameters) [10630 10651])
+                            ("clientMessage" variable (:type "String") (reparse-symbol formal_parameters) [10653 10673])
+                            ("iGameWrapper" variable (:type "IGameSystemWrapper") (reparse-symbol formal_parameters) [10675 10706]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [10595 22574])
+                    ("GetReelDisplay" function
+                       (:throws ("Exception")
+                        :typemodifiers ("protected")
+                        :arguments 
+                          ( ("iGameWrapper" variable (:type "IGameSystemWrapper") (reparse-symbol formal_parameters) [22706 22737]))                          
+                        :type "String[][]")
+                        (reparse-symbol class_member_declaration) [22669 23205])
+                    ("UpdateSpinCountAchievements" function
+                       (:throws ("Exception")
+                        :typemodifiers ("protected")
+                        :arguments 
+                          ( ("cSQL" variable (:type "CSQLManager") (reparse-symbol formal_parameters) [23351 23367])
+                            ("cAchievementCollection" variable (:type "CAchievementCollection") (reparse-symbol formal_parameters) [23369 23414])
+                            ("sPlayerID" variable (:type "String") (reparse-symbol formal_parameters) [23462 23478])
+                            ("sAchievementsMessage" variable (:type "StringBuilder") (reparse-symbol formal_parameters) [23480 23514])
+                            ("nGameID" variable (:type "int") (reparse-symbol formal_parameters) [23516 23527]))                          
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [23308 23912])
+                    ("UpdateWinCountAchievements" function
+                       (:throws ("Exception")
+                        :typemodifiers ("protected")
+                        :arguments 
+                          ( ("cSQL" variable (:type "CSQLManager") (reparse-symbol formal_parameters) [24057 24073])
+                            ("cAchievementCollection" variable (:type "CAchievementCollection") (reparse-symbol formal_parameters) [24076 24121])
+                            ("sPlayerID" variable (:type "String") (reparse-symbol formal_parameters) [24167 24183])
+                            ("sAchievementsMessage" variable (:type "StringBuilder") (reparse-symbol formal_parameters) [24185 24219])
+                            ("sReturnMessage" variable (:type "String") (reparse-symbol formal_parameters) [24221 24242])
+                            ("nGameID" variable (:type "int") (reparse-symbol formal_parameters) [24244 24255]))                          
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [24015 25062])
+                    ("UpdateCoinsWonAchievements" function
+                       (:throws ("Exception")
+                        :typemodifiers ("protected")
+                        :arguments 
+                          ( ("cSQL" variable (:type "CSQLManager") (reparse-symbol formal_parameters) [25207 25223])
+                            ("cAchievementCollection" variable (:type "CAchievementCollection") (reparse-symbol formal_parameters) [25226 25271])
+                            ("sPlayerID" variable (:type "String") (reparse-symbol formal_parameters) [25317 25333])
+                            ("sAchievementsMessage" variable (:type "StringBuilder") (reparse-symbol formal_parameters) [25335 25369])
+                            ("sReturnMessage" variable (:type "String") (reparse-symbol formal_parameters) [25371 25392])
+                            ("nGameID" variable (:type "int") (reparse-symbol formal_parameters) [25394 25405]))                          
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [25165 25990])
+                    ("UpdateScatterWinCountAchievements" function
+                       (:throws ("Exception")
+                        :typemodifiers ("protected")
+                        :arguments 
+                          ( ("cSQL" variable (:type "CSQLManager") (reparse-symbol formal_parameters) [26142 26158])
+                            ("cAchievementCollection" variable (:type "CAchievementCollection") (reparse-symbol formal_parameters) [26161 26206])
+                            ("sPlayerID" variable (:type "String") (reparse-symbol formal_parameters) [26259 26275])
+                            ("sAchievementsMessage" variable (:type "StringBuilder") (reparse-symbol formal_parameters) [26277 26311])
+                            ("sReturnMessage" variable (:type "String") (reparse-symbol formal_parameters) [26313 26334])
+                            ("nGameID" variable (:type "int") (reparse-symbol formal_parameters) [26336 26347]))                          
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [26093 27024])
+                    ("UpdateFeatureCountAchievements" function
+                       (:throws ("Exception")
+                        :typemodifiers ("protected")
+                        :arguments 
+                          ( ("cSQL" variable (:type "CSQLManager") (reparse-symbol formal_parameters) [27173 27189])
+                            ("cAchievementCollection" variable (:type "CAchievementCollection") (reparse-symbol formal_parameters) [27192 27237])
+                            ("sPlayerID" variable (:type "String") (reparse-symbol formal_parameters) [27287 27303])
+                            ("sAchievementsMessage" variable (:type "StringBuilder") (reparse-symbol formal_parameters) [27305 27339])
+                            ("sReturnMessage" variable (:type "String") (reparse-symbol formal_parameters) [27341 27362])
+                            ("nGameID" variable (:type "int") (reparse-symbol formal_parameters) [27364 27375]))                          
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [27127 27873])
+                    ("UpdateBetToWinCountAchievements" function
+                       (:throws ("Exception")
+                        :typemodifiers ("protected")
+                        :arguments 
+                          ( ("cSQL" variable (:type "CSQLManager") (reparse-symbol formal_parameters) [28023 28039])
+                            ("cAchievementCollection" variable (:type "CAchievementCollection") (reparse-symbol formal_parameters) [28042 28087])
+                            ("sPlayerID" variable (:type "String") (reparse-symbol formal_parameters) [28138 28154])
+                            ("sAchievementsMessage" variable (:type "StringBuilder") (reparse-symbol formal_parameters) [28156 28190])
+                            ("sReturnMessage" variable (:type "String") (reparse-symbol formal_parameters) [28192 28213])
+                            ("nTotalBet" variable (:type "long") (reparse-symbol formal_parameters) [28215 28229])
+                            ("nGameID" variable (:type "int") (reparse-symbol formal_parameters) [28231 28242]))                          
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [27976 29535])
+                    ("UpdateDiamondShowerCountAchievements" function
+                       (:throws ("Exception")
+                        :typemodifiers ("protected")
+                        :arguments 
+                          ( ("cSQL" variable (:type "CSQLManager") (reparse-symbol formal_parameters) [29690 29706])
+                            ("cAchievementCollection" variable (:type "CAchievementCollection") (reparse-symbol formal_parameters) [29709 29754])
+                            ("sPlayerID" variable (:type "String") (reparse-symbol formal_parameters) [29810 29826])
+                            ("sAchievementsMessage" variable (:type "StringBuilder") (reparse-symbol formal_parameters) [29828 29862])
+                            ("sReturnMessage" variable (:type "String") (reparse-symbol formal_parameters) [29864 29885])
+                            ("nTotalBet" variable (:type "long") (reparse-symbol formal_parameters) [29887 29901])
+                            ("nGameID" variable (:type "int") (reparse-symbol formal_parameters) [29903 29914]))                          
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [29638 30969])
+                    ("UpdateNumScatterTriggerCountAchievements" function
+                       (:throws ("Exception")
+                        :typemodifiers ("protected")
+                        :arguments 
+                          ( ("cSQL" variable (:type "CSQLManager") (reparse-symbol formal_parameters) [31128 31144])
+                            ("cAchievementCollection" variable (:type "CAchievementCollection") (reparse-symbol formal_parameters) [31147 31192])
+                            ("sPlayerID" variable (:type "String") (reparse-symbol formal_parameters) [31252 31268])
+                            ("sAchievementsMessage" variable (:type "StringBuilder") (reparse-symbol formal_parameters) [31270 31304])
+                            ("sReturnMessage" variable (:type "String") (reparse-symbol formal_parameters) [31306 31327])
+                            ("nGameID" variable (:type "int") (reparse-symbol formal_parameters) [31329 31340]))                          
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [31072 35853])
+                    ("UpdateOfAKindCountAchievements" function
+                       (:throws ("Exception")
+                        :typemodifiers ("protected")
+                        :arguments 
+                          ( ("cSQL" variable (:type "CSQLManager") (reparse-symbol formal_parameters) [36002 36018])
+                            ("cAchievementCollection" variable (:type "CAchievementCollection") (reparse-symbol formal_parameters) [36021 36066])
+                            ("sPlayerID" variable (:type "String") (reparse-symbol formal_parameters) [36116 36132])
+                            ("sAchievementsMessage" variable (:type "StringBuilder") (reparse-symbol formal_parameters) [36134 36168])
+                            ("sReturnMessage" variable (:type "String") (reparse-symbol formal_parameters) [36170 36191])
+                            ("nGameID" variable (:type "int") (reparse-symbol formal_parameters) [36193 36204]))                          
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [35956 38661])
+                    ("UpdateWinsInARowCountAchievements" function
+                       (:throws ("Exception")
+                        :typemodifiers ("protected")
+                        :arguments 
+                          ( ("cSQL" variable (:type "CSQLManager") (reparse-symbol formal_parameters) [38813 38829])
+                            ("cAchievementCollection" variable (:type "CAchievementCollection") (reparse-symbol formal_parameters) [38832 38877])
+                            ("sPlayerID" variable (:type "String") (reparse-symbol formal_parameters) [38930 38946])
+                            ("sAchievementsMessage" variable (:type "StringBuilder") (reparse-symbol formal_parameters) [38948 38982])
+                            ("sReturnMessage" variable (:type "String") (reparse-symbol formal_parameters) [38984 39005])
+                            ("nGameID" variable (:type "int") (reparse-symbol formal_parameters) [39007 39018]))                          
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [38764 43150])
+                    ("UpdateNumLinesWinCountAchievements" function
+                       (:throws ("Exception")
+                        :typemodifiers ("protected")
+                        :arguments 
+                          ( ("cSQL" variable (:type "CSQLManager") (reparse-symbol formal_parameters) [43303 43319])
+                            ("cAchievementCollection" variable (:type "CAchievementCollection") (reparse-symbol formal_parameters) [43322 43367])
+                            ("sPlayerID" variable (:type "String") (reparse-symbol formal_parameters) [43421 43437])
+                            ("sAchievementsMessage" variable (:type "StringBuilder") (reparse-symbol formal_parameters) [43439 43473])
+                            ("sReturnMessage" variable (:type "String") (reparse-symbol formal_parameters) [43475 43496])
+                            ("nGameID" variable (:type "int") (reparse-symbol formal_parameters) [43498 43509]))                          
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [43253 44862])
+                    ("UpdateSpecificFeatureCountAchievements" function
+                       (:throws ("Exception")
+                        :typemodifiers ("protected")
+                        :arguments 
+                          ( ("cSQL" variable (:type "CSQLManager") (reparse-symbol formal_parameters) [45019 45035])
+                            ("cAchievementCollection" variable (:type "CAchievementCollection") (reparse-symbol formal_parameters) [45038 45083])
+                            ("sPlayerID" variable (:type "String") (reparse-symbol formal_parameters) [45141 45157])
+                            ("sAchievementsMessage" variable (:type "StringBuilder") (reparse-symbol formal_parameters) [45159 45193])
+                            ("sReturnMessage" variable (:type "String") (reparse-symbol formal_parameters) [45195 45216])
+                            ("nGameID" variable (:type "int") (reparse-symbol formal_parameters) [45218 45229]))                          
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [44965 47285])
+                    ("UpdateNumSymbolWinCountAchievements" function
+                       (:throws ("Exception")
+                        :typemodifiers ("protected")
+                        :arguments 
+                          ( ("cSQL" variable (:type "CSQLManager") (reparse-symbol formal_parameters) [47439 47455])
+                            ("cAchievementCollection" variable (:type "CAchievementCollection") (reparse-symbol formal_parameters) [47458 47503])
+                            ("sPlayerID" variable (:type "String") (reparse-symbol formal_parameters) [47558 47574])
+                            ("sAchievementsMessage" variable (:type "StringBuilder") (reparse-symbol formal_parameters) [47576 47610])
+                            ("sReturnMessage" variable (:type "String") (reparse-symbol formal_parameters) [47612 47633])
+                            ("aasReelDisplay" variable
+                               (:dereference 2
+                                :type "String")
+                                (reparse-symbol formal_parameters) [47635 47660])
+                            ("nGameID" variable (:type "int") (reparse-symbol formal_parameters) [47662 47673]))                          
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [47388 51041])
+                    ("UpdateWinAllPaysAchievements" function
+                       (:throws ("Exception")
+                        :typemodifiers ("protected")
+                        :arguments 
+                          ( ("cSQL" variable (:type "CSQLManager") (reparse-symbol formal_parameters) [51188 51204])
+                            ("cAchievementCollection" variable (:type "CAchievementCollection") (reparse-symbol formal_parameters) [51207 51252])
+                            ("sPlayerID" variable (:type "String") (reparse-symbol formal_parameters) [51300 51316])
+                            ("sAchievementsMessage" variable (:type "StringBuilder") (reparse-symbol formal_parameters) [51318 51352])
+                            ("sReturnMessage" variable (:type "String") (reparse-symbol formal_parameters) [51354 51375])
+                            ("nGameID" variable (:type "int") (reparse-symbol formal_parameters) [51377 51388]))                          
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [51144 55422])
+                    ("UpdateBadgesCompleteAchievement" function
+                       (:throws ("Exception")
+                        :typemodifiers ("protected")
+                        :arguments 
+                          ( ("cSQL" variable (:type "CSQLManager") (reparse-symbol formal_parameters) [55572 55588])
+                            ("cAchievementCollection" variable (:type "CAchievementCollection") (reparse-symbol formal_parameters) [55591 55636])
+                            ("sPlayerID" variable (:type "String") (reparse-symbol formal_parameters) [55687 55703])
+                            ("sAchievementsMessage" variable (:type "StringBuilder") (reparse-symbol formal_parameters) [55705 55739])
+                            ("nGameID" variable (:type "int") (reparse-symbol formal_parameters) [55741 55752]))                          
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [55525 56822])
+                    ("UpdateTrophyProgress" function
+                       (:throws ("Exception")
+                        :typemodifiers ("protected")
+                        :arguments 
+                          ( ("cSQL" variable (:type "CSQLManager") (reparse-symbol formal_parameters) [56961 56977])
+                            ("cAchievementCollection" variable (:type "CAchievementCollection") (reparse-symbol formal_parameters) [56980 57025])
+                            ("sPlayerID" variable (:type "String") (reparse-symbol formal_parameters) [57065 57081])
+                            ("sAchievementsMessage" variable (:type "StringBuilder") (reparse-symbol formal_parameters) [57083 57117])
+                            ("nExtraProgress" variable (:type "long") (reparse-symbol formal_parameters) [57119 57138])
+                            ("sAchievementType" variable (:type "String") (reparse-symbol formal_parameters) [57140 57163])
+                            ("sAchievementParams" variable (:type "String") (reparse-symbol formal_parameters) [57165 57190]))                          
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [56925 57381])
+                    ("UpdateBadgeProgress" function
+                       (:throws ("Exception")
+                        :typemodifiers ("protected")
+                        :arguments 
+                          ( ("cSQL" variable (:type "CSQLManager") (reparse-symbol formal_parameters) [57519 57535])
+                            ("cAchievementCollection" variable (:type "CAchievementCollection") (reparse-symbol formal_parameters) [57538 57583])
+                            ("sPlayerID" variable (:type "String") (reparse-symbol formal_parameters) [57622 57638])
+                            ("sAchievementsMessage" variable (:type "StringBuilder") (reparse-symbol formal_parameters) [57640 57674])
+                            ("nExtraProgress" variable (:type "long") (reparse-symbol formal_parameters) [57676 57695])
+                            ("sAchievementType" variable (:type "String") (reparse-symbol formal_parameters) [57697 57720])
+                            ("sAchievementParams" variable (:type "String") (reparse-symbol formal_parameters) [57722 57747])
+                            ("nGameID" variable (:type "int") (reparse-symbol formal_parameters) [57749 57760]))                          
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [57484 57956])
+                    ("UpdateAchievementProgress" function
+                       (:throws ("Exception")
+                        :typemodifiers ("protected")
+                        :arguments 
+                          ( ("cSQL" variable (:type "CSQLManager") (reparse-symbol formal_parameters) [58107 58123])
+                            ("cAchievementCollection" variable (:type "CAchievementCollection") (reparse-symbol formal_parameters) [58126 58171])
+                            ("sPlayerID" variable (:type "String") (reparse-symbol formal_parameters) [58217 58233])
+                            ("sAchievementsMessage" variable (:type "StringBuilder") (reparse-symbol formal_parameters) [58235 58269])
+                            ("nExtraProgress" variable (:type "long") (reparse-symbol formal_parameters) [58271 58290])
+                            ("sAchievementType" variable (:type "String") (reparse-symbol formal_parameters) [58292 58315])
+                            ("sAchievementParams" variable (:type "String") (reparse-symbol formal_parameters) [58317 58342])
+                            ("nGameID" variable (:type "int") (reparse-symbol formal_parameters) [58344 58355]))                          
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [58066 60841])
+                    ("GetSessionID" function
+                       (:typemodifiers ("protected")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [60937 61167])
+                    ("CleanUpPlayerClasses" function
+                       (:typemodifiers ("protected")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [61261 61459])
+                    ("GenerateReturnMessage" function
+                       (:throws ("CNggException")
+                        :typemodifiers ("protected")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [61553 63589])
+                    ("HandleError" function
+                       (:typemodifiers ("protected")
+                        :arguments 
+                          ( ("sErrorCode" variable (:type "String") (reparse-symbol formal_parameters) [63711 63728]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [63684 63810])
+                    ("HandleError" function
+                       (:typemodifiers ("protected")
+                        :arguments 
+                          ( ("ngge" variable (:type "CNggException") (reparse-symbol formal_parameters) [63931 63949]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [63904 64173])
+                    ("StartGame" function
+                       (:typemodifiers ("public")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [64267 64831])
+                    ("EndGame" function
+                       (:typemodifiers ("public")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [64925 65466])
+                    ("recoverGame" function
+                       (:throws ("Exception")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("gameState" variable (:type "String") (reparse-symbol formal_parameters) [65584 65600]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [65560 66261])
+                    ("SaveState" function
+                       (:throws ("CNggException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("cServerData" variable (:type "CServerData") (reparse-symbol formal_parameters) [66380 66403]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [66355 66564])
+                    ("CreateLogs" function
+                       (:throws ("CNggException")
+                        :typemodifiers ("protected")
+                        :arguments 
+                          ( ("cServerData" variable (:type "CServerData") (reparse-symbol formal_parameters) [66686 66709]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [66658 67129])
+                    ("SetGameLogger" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("iGameLogs" variable (:type "INggGameLogs") (reparse-symbol formal_parameters) [67249 67271]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [67223 67315])
+                    ("LogGame" function
+                       (:throws ("Exception")
+                        :typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [67409 67770])
+                    ("GetAccount" function
+                       (:typemodifiers ("public")
+                        :type "INggAccount")
+                        (reparse-symbol class_member_declaration) [67863 67932])
+                    ("GetRng" function
+                       (:typemodifiers ("public")
+                        :type "INggRng")
+                        (reparse-symbol class_member_declaration) [68025 68082])
+                    ("InitialiseData" function
+                       (:typemodifiers ("protected")
+                        :arguments 
+                          ( ("cServerData" variable (:type "CServerData") (reparse-symbol formal_parameters) [68205 68228]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [68175 71150])
+                    ("GetHashData" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("sMessage" variable (:type "String") (reparse-symbol formal_parameters) [71292 71307]))                          )
+                        (reparse-symbol class_member_declaration) [71280 71956])
+                    ("GetStringFromHashData" function
+                       (:typemodifiers ("protected")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [72050 72382])
+                    ("GetBetFromMessage" function
+                       (:typemodifiers ("protected")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [72476 72629])
+                    ("UpdateBalance" function
+                       (:typemodifiers ("protected")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [72723 72823])
+                    ("setErrorCode" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("errCode" variable (:type "String") (reparse-symbol formal_parameters) [73039 73053]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [73014 73100]))                  
+                :type "class")
+                nil [990 73105]))          
+    :file "CNggSlotServer.java"
+    :pointmax 73105
+    :fsize 75072
+    :lastmodtime '(20497 52493)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!Users!tapani.jarvinen!Documents!workspace!Facebook_Stateless_Interface!src!com!nextgengaming!facebook!stateless!interfacelayer!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

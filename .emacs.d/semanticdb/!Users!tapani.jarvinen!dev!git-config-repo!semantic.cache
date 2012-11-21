@@ -1,0 +1,27 @@
+;; Object git-config-repo/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "git-config-repo/"
+  :tables (list 
+   (semanticdb-table "game.json"
+    :major-mode 'js-mode
+    :tags nil
+    :file "game.json"
+    :pointmax 4007
+    :fsize 4006
+    :lastmodtime '(20633 38369)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "achievement.json"
+    :major-mode 'js-mode
+    :tags nil
+    :file "achievement.json"
+    :pointmax 46349
+    :fsize 46348
+    :lastmodtime '(20633 38367)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!Users!tapani.jarvinen!dev!git-config-repo!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )
